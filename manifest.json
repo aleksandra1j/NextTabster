@@ -1,0 +1,15 @@
+{
+  "name": "NextTabster™ | Spice up your old google view ",
+  "description": "Are you tired of the same everyday monotonous look of your chrome new tab?\nThis extension aims to change just that.\nChoose from a large number of backgrounds with beautiful landscapes or enjoy them as they change one after the other, and at the same time stay inspired with an equally large number of daily quotes. Stay up to date with the weather forecast for almost every city anywhere in the world and many other features that you will enjoy right with NextTabster.",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "chrome_url_overrides": {
+    "newtab": "main.html"
+  }
+
+}

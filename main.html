@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<!--    <meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+
+    <title>New Tab</title>
+
+  <!--  <link rel="stylesheet" type="text/css" href="css1.css">
+    <link rel="stylesheet" type="text/css" href="css2.css">-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+
+
+    <script src="script.js" defer></script>
+    <script src="key.js" defer></script>
+
+</head>
+<body>
+
+<section class="banner">
+    <div class="imgBg">
+        <img src="items_used/1.jpg" class="darkBackground">
+        <img src="items_used/2.jpg" class="darkBackground">
+        <img src="items_used/silhouetteDeer.jpg" class="darkBackground">
+        <img src="items_used/4.jpg" class="darkBackground">
+        <img src="items_used/5.jpg" class="darkBackground">
+        <img src="items_used/6.jpg" class="darkBackground">
+        <img src="items_used/7.jpg">
+        <img src="items_used/8.jpg" class="darkBackground">
+        <img src="items_used/digitalArtMountain.jpg" class="darkBackground">
+        <img src="items_used/9.jpg" class="darkBackground">
+        <img src="items_used/10.jpg" class="darkBackground">
+        <img src="items_used/afternoon1.jpg">
+        <img src="items_used/afternoon2.jpg">
+        <img src="items_used/cartoon-sunrise.jpg" class="active darkBackground">
+        <img src="items_used/cropped.jpg" class="lightBackground">
+        <img src="items_used/red-afternoon.jpg">
+        <img src="items_used/sunrise2.jpg">
+        <img src="items_used/sunrise.jpg"  class="darkBackground">
+        <img src="items_used/nightSky.jpg"  class="darkBackground">
+        <img src="items_used/camping.jpg"  class="darkBackground">
+        <img src="items_used/night-alt.jpg"  class="darkBackground">
+    </div>
+
+    <ul class="controls">
+        <li id="myLi1"></li>
+        <li id="myLi2"></li>
+    </ul>
+
+    <div class="search-section active">
+
+        <div class="box">
+            <input type="checkbox" id="check">
+            <div class="search-box">
+                <form action="https://www.google.com/search" method="get">
+                    <input type="text" placeholder="       Type here..." name="q">
+                    <label for="check" class="icon">
+                        <i class="fas fa-search"></i>
+                    </label>
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+  <div class="timeGreeting">
+      <h1>
+        <span id="greeting"> </span>
+      <span id="name" contenteditable="true"> </span>
+     </h1>
+
+      <time id="time">
+
+      </time>
+
+  </div>
+
+<div class="mainFocus">
+    <h2 id="focus-alt">
+        What are you most grateful for today?
+        <br>
+        What is the first thing that comes to mind?
+    </h2>
+
+
+    <h2 id="focus" contenteditable="true">
+
+    </h2>
+</div>
+
+    <div class="mainBox">
+
+        <input type="checkbox" id="weatherCheck">
+        <div class="weather-toggle-button1">
+            <label for="weatherCheck">
+                <i class="fas fa-cloud-sun-rain"></i>
+            </label>
+        </div>
+
+       <!-- <div class="sideBar_menu">-->
+        <div class="wrapper">
+
+            <div class="logo">
+                <a href="#">
+                    WeatherToday
+                </a>
+            </div>
+
+            <div class="weather-toggle-button2">
+                <label for="weatherCheck">
+                    <i class="fas fa-times"></i>
+                </label>
+
+            </div>
+
+            <div class="search-city-container">
+                <input type="text" placeholder="Enter a city name" id="city" value="Skopje">
+                <button id="search-city-button">
+                    Search
+                </button>
+            </div>
+
+            <div id="result">
+
+            </div>
+
+        </div>
+
+              <!--  <div class="city-search">
+                    <input type="text" class="city-search-bar">
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                             width="1.5em" height="1.5em"
+                             viewBox="0 0 24 24"
+                             style=" fill:#000000;">
+                            <path d="M 9 2 C 5.1458514 2 2 5.1458514 2 9 C 2 12.854149 5.1458514 16 9 16 C 10.747998 16 12.345009 15.348024 13.574219 14.28125 L 14 14.707031 L 14 16 L 20 22 L 22 20 L 16 14 L 14.707031 14 L 14.28125 13.574219 C 15.348024 12.345009 16 10.747998 16 9 C 16 5.1458514 12.854149 2 9 2 z M 9 4 C 11.773268 4 14 6.2267316 14 9 C 14 11.773268 11.773268 14 9 14 C 6.2267316 14 4 11.773268 4 9 C 4 6.2267316 6.2267316 4 9 4 z">
+
+                            </path>
+                        </svg>
+                    </button>
+
+                </div>
+
+                <div class="weather">
+                    <h2 class="city"> Weather in Denver</h2>
+                    <div class="temperature"> 51°C</div>
+                    <img src="" alt="" class="classIcon2">
+                    <div class="description">
+                        Cloudy
+                    </div>
+                    <div class="humidity">
+                        Humidity: 60%
+                    </div>
+                    <div class="wind">
+                        Wind speed: 6.2 km/h
+                    </div>
+                </div>
+-->
+
+    </div>
+
+<div class="QuoteWrapper">
+
+    <input type="checkbox" id="quoteCheck">
+    <div class="quote-toggle-button1">
+        <label for="quoteCheck">
+            <i class="fas fa-message"></i>
+        </label>
+    </div>
+
+    <div class="quote-Box">
+
+        <div class="quote-toggle-button2">
+            <label for="quoteCheck">
+                <i class="fas fa-window-minimize"></i>
+            </label>
+
+        </div>
+
+        <h2>
+            Quote of The Day
+        </h2>
+        <small id="quote-tags">
+
+        </small>
+        <blockquote id="quote-text">
+
+        </blockquote>
+        <cite id="quote-author">
+
+        </cite>
+        <button type="button" class="click-new-quote" id="click4new">
+            New Quote
+        </button>
+
+    </div>
+
+</div>
+
+
+</section>
+
+
+
+
+<!--
+<section class="first">
+    <video class="video-slide active" src="items_used/AuroraBorealis.mp4" autoplay muted loop></video>
+    <video class="video-slide" src="items_used/GoldenGateBridge.mp4" autoplay muted loop></video>
+    <video class="video-slide" src="items_used/Saigon.mp4" autoplay muted loop></video>
+    <video class="video-slide" src="items_used/Nature.mp4" autoplay muted loop></video>
+    <video class="video-slide" src="items_used/Waves.mp4" autoplay muted loop></video>
+    <video class="video-slide" src="items_used/Skyscrapers.mp4" autoplay muted loop></video>
+    <video class="video-slide" src="items_used/Sea.mp4" autoplay muted loop></video>
+    <video class="video-slide" src="items_used/Islands.mp4" autoplay muted loop></video>
+    <video class="video-slide" src="items_used/Waterfall.mp4" autoplay muted loop></video>
+    <video class="video-slide" src="items_used/Grass.mp4" autoplay muted loop></video>
+    <video class="video-slide" src="items_used/Skyscrapers2.mp4" autoplay muted loop></video>
+    <video class="video-slide" src="items_used/Windmill.mp4" autoplay muted loop></video>
+
+
+
+    <div class="slider-navigation">
+        <div class="navigation-button active"></div>
+        <div class="navigation-button"></div>
+        <div class="navigation-button"></div>
+        <div class="navigation-button"></div>
+        <div class="navigation-button"></div>
+        <div class="navigation-button"></div>
+        <div class="navigation-button"></div>
+        <div class="navigation-button"></div>
+        <div class="navigation-button"></div>
+        <div class="navigation-button"></div>
+        <div class="navigation-button"></div>
+        <div class="navigation-button"></div>
+
+    </div>
+
+
+
+</section>
+-->
+
+<!--<section>
+        <div class="clock">
+            <div class="clock-container">
+                <h2 id="hour">00</h2>
+                <h2 id="minute">00</h2>
+                <h2 id="seconds">00</h2>
+                <span id="amPm">AM</span>
+
+            </div>
+
+        </div>
+    </section>-->
+
+
+ <!--   <form class="searchBox" action="https://www.google.com/search" method="get">
+        <input type="text" class="search" name="q" value="" placeholder="Search Bar...">
+    </form>-->
+
+   <!--<div id="theme-open" class="fas fa-bars"></div>
+    <div class="theme-container">
+        <div id="theme-close" class="fas fa-times"></div>
+
+        <h3>
+            Switch Theme
+        </h3>
+
+        <div class="theme-switcher-button">
+            <span> light </span>
+            <span class="button"></span>
+            <span> dark </span>
+
+        </div>
+        <h3>
+            Pick a Color
+        </h3>
+
+        <div class="theme-colors">
+            <div class="color" style="background: linear-gradient(#c4f4f2,#69ebfc)"></div>
+            <div class="color" style="background: linear-gradient(#d8f4ff,#2f5cff)"></div>
+            <div class="color" style="background: linear-gradient(#4884ee,#06bcfb)"></div>
+            <div class="color" style="background: linear-gradient(#ecfdff,#ea7e46)"></div>
+            <div class="color" style="background: linear-gradient(#7ee8fa,#ea9aa6)"></div>
+            <div class="color" style="background: linear-gradient(#f53844,#423e8f)"></div>
+            <div class="color" style="background: linear-gradient(#e1adfa,#fcb4b4)"></div>
+            <div class="color" style="background: linear-gradient(#ea52f8,#0066ff)"></div>
+            <div class="color" style="background: linear-gradient(#0bab64,#3bb78f)"></div>
+            <div class="color" style="background: linear-gradient(#c4d595,#eed44c)"></div>
+            <div class="color" style="background: linear-gradient(#62bdff,#3d10bd)"></div>
+            <div class="color" style="background: linear-gradient(#2bc0e4,#eaecc6)"></div>
+            <div class="color" style="background: linear-gradient(#ffeac0,#ff4444)"></div>
+            <div class="color" style="background: linear-gradient(#d9edff,#5236ff)"></div>
+            <div class="color" style="background: linear-gradient(#f8eba6,#ffd8c2)"></div>
+            <div class="color" style="background: linear-gradient(#e0eadd,#b2cbee)"></div>
+            <div class="color" style="background: linear-gradient(#cc91e8,#91daa9)"></div>
+            <div class="color" style="background: linear-gradient(#191654,#43c6ac)"></div>
+            <div class="color" style="background: linear-gradient(#8c366c,#6e64e7)"></div>
+            <div class="color" style="background: linear-gradient(#cac9ee,#605a62)"></div>
+
+        </div>
+
+    </div>-->
+
+
+<!--
+<div class="color-switcher">
+
+
+    <div class="switcher-button">
+         <i class="fas fa-cog"></i>
+    </div>
+
+            <h3>
+                Theme Switcher
+            </h3>
+<div class="theme-buttons-container">
+    <span class="theme-buttons" data-color="#d9edff" style="background-color:#d9edff;"></span>
+    <span class="theme-buttons" data-color="#d9edff" style="background-color:#86b3dc;"></span>
+    <span class="theme-buttons" data-color="#d9edff" style="background-color:#79abda;"></span>
+    <span class="theme-buttons" data-color="#d9edff" style="background-color:#3289d7;"></span>
+    <span class="theme-buttons" data-color="#d9edff" style="background-color:#255785;"></span>
+    <span class="theme-buttons" data-color="#d9edff" style="background-color:#153959;"></span>
+    <span class="theme-buttons" data-color="#d9edff" style="background-color:#0b2338;"></span>
+    <span class="theme-buttons" data-color="#d9edff" style="background-color:#05182a;"></span>
+    <span class="theme-buttons" data-color="#d9edff" style="background-color:#021628;"></span>
+
+</div>
+
+</div>
+
+<button class="theme-swapper-button">
+
+        <svg class="icon" style="width:20px;height:20px" viewBox="0 0 24 24">
+            <path d="M7.5,2C5.71,3.15 4.5,5.18 4.5,7.5C4.5,9.82 5.71,11.85 7.53,13C4.46,13 2,
+    10.54 2,7.5A5.5,5.5 0 0,1 7.5,2M19.07,3.5L20.5,4.93L4.93,20.5L3.5,19.07L19.07,3.5M12.89,5.93L11.41,
+    5L9.97,6L10.39,4.3L9,3.24L10.75,3.12L11.33,1.47L12,3.1L13.73,3.13L12.38,4.26L12.89,5.93M9.59,
+    9.54L8.43,8.81L7.31,9.59L7.65,8.27L6.56,7.44L7.92,7.35L8.37,6.06L8.88,7.33L10.24,7.36L9.19,8.23L9.59,
+    9.54M19,13.5A5.5,5.5 0 0,1 13.5,19C12.28,19 11.15,18.6 10.24,17.93L17.93,10.24C18.6,11.15 19,12.28 19,
+    13.5M14.6,20.08L17.37,18.93L17.13,22.28L14.6,20.08M18.93,17.38L20.08,14.61L22.28,17.15L18.93,17.38M20.08,
+    12.42L18.94,9.64L22.28,9.88L20.08,12.42M9.63,18.93L12.4,20.08L9.87,22.27L9.63,18.93Z" />
+        </svg>
+
+    </button>
+
+
+
+<section>
+    <div class="sun-moon-iconStyle">
+        <svg class="sun" style="width:24px;height:24px" viewBox="0 0 24 24">
+            <path d="M3.55,18.54L4.96,19.95L6.76,18.16L5.34,16.74M11,22.45C11.32,22.45 13,22.45 13,22.45V19.5H11M12,5.5A6,6 0 0,0 6,11.5A6,6 0 0,0 12,17.5A6,6 0 0,0 18,11.5C18,8.18 15.31,5.5 12,5.5M20,12.5H23V10.5H20M17.24,18.16L19.04,19.95L20.45,18.54L18.66,16.74M20.45,4.46L19.04,3.05L17.24,4.84L18.66,6.26M13,0.55H11V3.5H13M4,10.5H1V12.5H4M6.76,4.84L4.96,3.05L3.55,4.46L5.34,6.26L6.76,4.84Z" />
+        </svg>
+
+        <svg class="moon" style="width:24px;height:24px" viewBox="0 0 24 24">
+            <path d="M17.75,4.09L15.22,6.03L16.13,9.09L13.5,7.28L10.87,9.09L11.78,6.03L9.25,4.09L12.44,4L13.5,1L14.56,4L17.75,
+    4.09M21.25,11L19.61,12.25L20.2,14.23L18.5,13.06L16.8,14.23L17.39,12.25L15.75,11L17.81,10.95L18.5,9L19.19,
+    10.95L21.25,11M18.97,15.95C19.8,15.87 20.69,17.05 20.16,17.8C19.84,18.25 19.5,18.67 19.08,19.07C15.17,
+    23 8.84,23 4.94,19.07C1.03,15.17 1.03,8.83 4.94,4.93C5.34,4.53 5.76,4.17 6.21,3.85C6.96,3.32 8.14,4.21 8.06,
+    5.04C7.79,7.9 8.75,10.87 10.95,13.06C13.14,15.26 16.1,16.22 18.97,15.95M17.33,17.97C14.5,17.81 11.7,
+    16.64 9.53,14.5C7.36,12.31 6.2,9.5 6.04,6.68C3.23,9.82 3.34,14.64 6.35,17.66C9.37,20.67 14.19,20.78 17.33,17.97Z"/>
+        </svg>
+    </div>
+</section>
+
+-->
+
+</body>
+
+</html>

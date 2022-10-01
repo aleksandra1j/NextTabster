@@ -1,0 +1,125 @@
+/*
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   text-transform: uppercase;
+    transition: all .2s linear;
+}
+:root{
+   --main-color: #54d45d; ;
+}
+body{
+    --accent-color: #ffffff;
+    --background-color: linear-gradient(-45deg, #e7942f, #2fe769, #2fc5e7, #2f38e7);
+    --transition-delay:1s;
+    --icon-color: #54d55d;
+    !*--main-color: #54d45d;*!
+
+    transition: var(--transition-delay);
+    background: var(--background-color);
+}
+body.dark-theme{
+    --accent-color: #ffffff;
+    --background-color: linear-gradient(-45deg,#242424,#2d1c60,#522abb, #6349bd);
+    --icon-color: #2d1d5e;
+    --main-color: #7654bc;
+
+    background: var(--background-color);
+}
+section{
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.theme-swapper-button{
+
+    cursor:pointer;
+    position: absolute;
+    width: 25px;
+    height: 30px;
+
+    top: 27px;
+    right: 100px;
+
+    background-color: var(--accent-color);
+
+
+    align-items: center;
+    justify-content: center;
+    padding: .3em .1em;
+    border: #3a3a3a;
+    border-radius: .3em;
+    outline: none;
+    transition: var(--transition-delay);
+    transform: scale(1);
+ }
+
+.theme-swapper-button:hover, .theme-swapper-button:focus{
+    transform: scale(1.1);
+}
+
+.icon{
+    fill: var(--icon-color);
+}
+
+.color-switcher{
+    position: fixed;
+    top: 25px;
+    right: -200px;
+    width: 200px;
+    padding: 10px;
+    background: white;
+    z-index: 800;
+}
+.color-switcher .active{
+    right:0;
+}
+.color-switcher h3{
+    color: var(--main-color);
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #333333;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.color-switcher .switcher-button{
+    position: absolute;
+    top: 0;
+    left: -75px;
+    color: var(--main-color);
+    background: white;
+    padding: 8px 8px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.color-switcher .theme-buttons-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.color-switcher .switcher-button i{
+    animation: rotate 2s linear infinite;
+}
+@keyframes rotate {
+   100%{
+    transform: rotate(360deg);
+   }
+}
+
+.color-switcher .theme-buttons-container .theme-buttons{
+    display: block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+}
+*/
